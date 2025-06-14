@@ -56,3 +56,4 @@ export async function deleteNote(noteId: number) {
   const response = await axios.delete<Note>(`/${noteId}`);
   return response.data;
 }
+
