@@ -2,7 +2,7 @@ import axios from 'axios';
 import type { Note } from '../types/note';
 
 const KEY = import.meta.env.VITE_NOTEHUB_TOKEN;
-axios.defaults.baseURL = 'https://notehub-public.goit.study/api/notes';
+axios.defaults.baseURL = 'https://notehub-public.goit.study/api/docs';
 axios.defaults.headers.common['Authorization'] = `Bearer ${KEY}`;
 axios.defaults.headers.common['Accept'] = 'application/json';
 
