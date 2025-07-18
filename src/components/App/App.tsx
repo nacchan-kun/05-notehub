@@ -59,7 +59,7 @@ function App() {
         {isError && (
           <ErrorMessage message="There was an error, please try again..." />
         )}
-        {!isError && data?.notes.length === 0 && (
+        {!isError && data?.notes?.length === 0 && (
           <ErrorMessage message="Notes is not found" />
         )}
         {data?.notes && <NoteList notes={data.notes} />}
